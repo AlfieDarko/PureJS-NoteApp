@@ -83,6 +83,15 @@
         console.log("%c Assertion passed!: ",
           'background: green; color: #bada55', funcToCheck, "contains property called", propToLookFor);
       }
+    },
+
+    isArrayEmpty: function(arrayToCheck) {
+      if (arrayToCheck.length > 0) {
+        throw new Error("Assertion failed: " + arrayToCheck + " is not empty");
+      } else {
+        console.log("%c Assertion passed!: ",
+          'background: green; color: #bada55', arrayToCheck, " is empty");
+      }
     }
   };
 
