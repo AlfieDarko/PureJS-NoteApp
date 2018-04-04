@@ -13,18 +13,20 @@
 
     isTrue: function(assertionToCheck) {
       if (!assertionToCheck) {
-        throw new Error("Assertion failed: " + assertionToCheck + " is not truthy");
+        throw new Error("Assertion failed: expected" + assertionToCheck + " to be true but got false");
       } else {
-        console.log("Assertion passed!: " + assertionToCheck + " is truthy");
+        console.log("%c Assertion passed!: ",
+          'background: green; color: #bada55', assertionToCheck, " is truthy");
       }
     },
 
 
     isFalse: function(assertionToCheck) {
       if (assertionToCheck) {
-        throw new Error("Assertion failed: " + assertionToCheck + " is not falsey");
+        throw new Error("Assertion failed: expected" + assertionToCheck + " to be false but got true");
       } else {
-        console.log("Assertion passed!: " + assertionToCheck + " is falsey");
+        console.log("%c Assertion passed!: ",
+          'background: green; color: #bada55', assertionToCheck, " is falsey");
       }
     },
 
@@ -32,7 +34,8 @@
       if (assertionToCheck1 !== assertionToCheck2) {
         throw new Error("Assertion failed: " + assertionToCheck1 + '&' + assertionToCheck2 + "are not equals");
       } else {
-        console.log("Assertion passed!: " + assertionToCheck1 + '&' + assertionToCheck2 + "are equals");
+        console.log("%c Assertion passed!: ",
+          'background: green; color: #bada55', assertionToCheck1, ' & ', assertionToCheck2, "are equals");
       }
     },
 
@@ -40,7 +43,8 @@
       if (assertionToCheck1 == assertionToCheck2) {
         throw new Error("Assertion failed: " + assertionToCheck1 + '&' + assertionToCheck2 + "are equals");
       } else {
-        console.log("Assertion passed!: " + assertionToCheck1 + '&' + assertionToCheck2 + "are not equals");
+        console.log("%c Assertion passed!: ",
+          'background: green; color: #bada55', assertionToCheck1, '&', assertionToCheck2, "are not equals");
       }
     },
 
@@ -48,7 +52,8 @@
       if (assertionToCheck !== null) {
         throw new Error("Assertion failed: " + assertionToCheck + "is not null");
       } else {
-        console.log("Assertion passed!: " + assertionToCheck + "is null!");
+        console.log("%c Assertion passed!: ",
+          'background: green; color: #bada55', assertionToCheck, "is null!");
 
       }
     },
@@ -57,7 +62,8 @@
       if (assertionToCheck == null) {
         throw new Error("Assertion failed: " + assertionToCheck + "is null");
       } else {
-        console.log("Assertion passed!: " + assertionToCheck + "is not null!");
+        console.log("%c Assertion passed!: ",
+          'background: green; color: #bada55', assertionToCheck, "is not null!");
       }
     },
 
@@ -65,7 +71,8 @@
       if (!assertionToCheck.include(wordToCheck)) {
         throw new Error("Assertion failed: " + assertionToCheck + "does not contain" + wordToCheck);
       } else {
-        console.log("Assertion passed: " + assertionToCheck + "contains" + wordToCheck);
+        console.log("%c Assertion passed!: ",
+          'background: green; color: #bada55', assertionToCheck, "contains", wordToCheck);
       }
     },
 
@@ -73,7 +80,17 @@
       if (!assertionToCheck.include(wordToCheck)) {
         throw new Error("Assertion failed: " + assertionToCheck + "does not contain" + wordToCheck);
       } else {
-        console.log("Assertion passed: " + assertionToCheck + "contains" + wordToCheck);
+        console.log("%c Assertion passed!: ",
+          'background: green; color: #bada55', assertionToCheck, "contains", wordToCheck);
+      }
+    },
+
+    hasProperty: function(funcToCheck, propToLookFor) {
+      if (!funcToCheck.hasOwnProperty(propToLookFor)) {
+        throw new Error("Assertion failed: " + funcToCheck + "does not contain" + propToLookFor);
+      } else {
+        console.log("%c Assertion passed!: ",
+          'background: green; color: #bada55', funcToCheck, "contains", propToLookFor);
       }
     }
   };
