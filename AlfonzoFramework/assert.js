@@ -92,6 +92,15 @@
         console.log("%c Assertion passed!: ",
           'background: green; color: #bada55', arrayToCheck, " is empty");
       }
+    },
+
+    doesObjectContain: function(objectToCheck, element) {
+      if (!Object.values(objectToCheck).includes(element)) {
+        throw new Error("Assertion failed: " + objectToCheck + " doesnt contain " + element);
+      } else {
+        console.log("%c Assertion passed!: ",
+          'background: green; color: #bada55', objectToCheck, " contains ", element);
+      }
     }
   };
 
