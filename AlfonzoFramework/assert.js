@@ -59,20 +59,20 @@
     },
 
     arrayIncludes: function(arrayToCheck, wordToCheck) {
-      if (!assertionToCheck.include(wordToCheck)) {
-        throw new Error("Assertion failed: " + assertionToCheck + "does not contain" + wordToCheck);
+      if (!arrayToCheck.includes(wordToCheck)) {
+        throw new Error("Assertion failed: " + arrayToCheck + "does not contain" + wordToCheck);
       } else {
         console.log("%c Assertion passed!: ",
-          'background: green; color: #bada55', assertionToCheck, "contains", wordToCheck);
+          'background: green; color: #bada55', arrayToCheck, "contains", wordToCheck);
       }
     },
 
     arrayDoesntIncludes: function(arrayToCheck, wordToCheck) {
-      if (!assertionToCheck.include(wordToCheck)) {
-        throw new Error("Assertion failed: " + assertionToCheck + "does not contain" + wordToCheck);
+      if (!arrayToCheck.includes(wordToCheck)) {
+        throw new Error("Assertion failed: " + arrayToCheck + "does not contain" + wordToCheck);
       } else {
         console.log("%c Assertion passed!: ",
-          'background: green; color: #bada55', assertionToCheck, "contains", wordToCheck);
+          'background: green; color: #bada55', arrayToCheck, "contains", wordToCheck);
       }
     },
 

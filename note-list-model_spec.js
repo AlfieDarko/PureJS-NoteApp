@@ -3,4 +3,10 @@ describe('NoteList', function() {
     notelist = new NoteList();
     assert.isArrayEmpty(notelist.allNotes())
   });
+
+  it('.createNote() creates a note onject with the text we pass in', function() {
+    notelist = new NoteList();
+    notelist.createNote("hello")
+    assert.arrayIncludes(notelist.notes, "hello")
+  });
 });
