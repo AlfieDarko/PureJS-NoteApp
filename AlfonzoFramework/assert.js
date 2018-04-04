@@ -1,13 +1,4 @@
 (function(exports) {
-  function describe(string, itFunc) {
-    console.log(string);
-    callback(string, itFunc)
-  }
-
-  function it(string, assertFunc) {
-    console.log(string);
-    assertFunc(assert)
-  }
 
   var assert = {
 
@@ -87,10 +78,10 @@
 
     hasProperty: function(funcToCheck, propToLookFor) {
       if (!funcToCheck.hasOwnProperty(propToLookFor)) {
-        throw new Error("Assertion failed: " + funcToCheck + "does not contain" + propToLookFor);
+        throw new Error("Assertion failed: " + funcToCheck + "does not contain property: " + propToLookFor);
       } else {
         console.log("%c Assertion passed!: ",
-          'background: green; color: #bada55', funcToCheck, "contains", propToLookFor);
+          'background: green; color: #bada55', funcToCheck, "contains property called", propToLookFor);
       }
     }
   };
