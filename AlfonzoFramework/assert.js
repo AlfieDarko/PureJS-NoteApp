@@ -101,6 +101,15 @@
         console.log("%c Assertion passed!: ",
           'background: green; color: #bada55', objectToCheck, " contains ", element);
       }
+    },
+
+    doesFunctionExist: function(objectToCheck, funcToLookFor) {
+      if (!typeof objectToCheck.funcToLookFor === 'function') {
+        throw new Error("Assertion failed: " + objectToCheck + " doesnt contain " + funcToLookFor);
+      } else {
+        console.log("%c Assertion passed!: ",
+          'background: green; color: #bada55', objectToCheck, " contains ", funcToLookFor);
+      }
     }
   };
 
