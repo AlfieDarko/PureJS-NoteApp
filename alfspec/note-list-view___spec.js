@@ -5,9 +5,9 @@ describe('>Notelist View', function() {
     assert.doesFunctionExist(nlview, this.NoteList)
   });
 
-  // it('returns a HTML string representing the notelist', function() {
-  //   nlview = new NoteListView();
-  //
-  //   assert.nlview.returnHTML()
-  // });
+  it('>returns a HTML string representing the notelist', function() {
+    nlview = new NoteListView();
+
+    assert.nlview.returnHTML()
+  });
 });
