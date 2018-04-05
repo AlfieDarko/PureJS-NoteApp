@@ -23,10 +23,10 @@
 
     isEqual: function(assertionToCheck1, assertionToCheck2) {
       if (assertionToCheck1 !== assertionToCheck2) {
-        throw new Error("Assertion failed: " + assertionToCheck1 + '&' + assertionToCheck2 + "are not equals");
+        throw new Error("Assertion failed: " + assertionToCheck1 + '   &   ' + assertionToCheck2 + "are not equals");
       } else {
         console.log("%c Assertion passed!: ",
-          'background: green; color: #bada55', assertionToCheck1, ' & ', assertionToCheck2, "are equals");
+          'background: green; color: #bada55', assertionToCheck1, '   &   ', assertionToCheck2, "are equals");
       }
     },
 
