@@ -1,0 +1,22 @@
+{
+  "name": "purejs-webapp",
+  "version": "1.0.0",
+  "description": "A Notetaking webapp done in pure JS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlfieDarko/PureJS-NoteApp.git"
+  },
+  "author": "Alfie Darko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlfieDarko/PureJS-NoteApp/issues"
+  },
+  "homepage": "https://github.com/AlfieDarko/PureJS-NoteApp#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
