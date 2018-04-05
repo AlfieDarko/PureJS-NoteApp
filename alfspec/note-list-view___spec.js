@@ -6,7 +6,7 @@ describe('>Notelist View', function() {
   });
 
   it('>returns a HTML string representing the notelist', function() {
-    nlview = new NoteListView();
+    nlview = new NoteListView(new NoteList());
     nlview.notelist.createNote('hello')
     nlview.notelist.createNote('goodbye')
     var htmlString = "<ul><li><div>hello</div></li><li><div>goodbye</div></li></ul>"
