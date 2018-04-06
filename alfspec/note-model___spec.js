@@ -9,4 +9,15 @@ describe('Note Model', function() {
     note = new Note(noteText)
     assert.isEqual(note.text, noteText)
   });
+
+  it('    has an autogenerating serial ID property', function() {
+    noteText = "new note"
+    note = new Note(noteText)
+    assert.hasProperty(note, "_id")
+
+  });
+
+  it('    the serial ids are unique', function() {
+
+  });
 });

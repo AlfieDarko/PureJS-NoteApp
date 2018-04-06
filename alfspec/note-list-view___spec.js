@@ -18,6 +18,6 @@ describe('Notelist View', function() {
     nlview.notelist.createNote('Shopping list: Bananas, bread, egg, meat, milk, honey. Top up electric with £20')
     var htmlString = "<ul><li><div>Shopping list:...</div></li></ul>"
     assert.isEqual(nlview.returnHTML(), htmlString)
-
   });
+
 });
