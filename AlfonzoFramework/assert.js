@@ -6,7 +6,7 @@
       if (!assertionToCheck) {
         throw new Error("Assertion failed: expected" + assertionToCheck + " to be true but got false");
       } else {
-        console.log("%c Assertion passed!: ",
+        console.log("    %c Assertion passed!: ",
           'background: green; color: #bada55', assertionToCheck, " is truthy");
       }
     },
@@ -16,7 +16,7 @@
       if (assertionToCheck) {
         throw new Error("Assertion failed: expected" + assertionToCheck + " to be false but got true");
       } else {
-        console.log("%c Assertion passed!: ",
+        console.log("    %c Assertion passed!: ",
           'background: green; color: #bada55', assertionToCheck, " is falsey");
       }
     },
@@ -25,7 +25,7 @@
       if (assertionToCheck1 !== assertionToCheck2) {
         throw new Error("Assertion failed: " + assertionToCheck1 + '   &   ' + assertionToCheck2 + "are not equals");
       } else {
-        console.log("%c Assertion passed!: ",
+        console.log("    %c Assertion passed!: ",
           'background: green; color: #bada55', assertionToCheck1, '   &   ', assertionToCheck2, "are equals");
       }
     },
@@ -34,7 +34,7 @@
       if (assertionToCheck1 == assertionToCheck2) {
         throw new Error("Assertion failed: " + assertionToCheck1 + '&' + assertionToCheck2 + "are equals");
       } else {
-        console.log("%c Assertion passed!: ",
+        console.log("    %c Assertion passed!: ",
           'background: green; color: #bada55', assertionToCheck1, '&', assertionToCheck2, "are not equals");
       }
     },
@@ -43,7 +43,7 @@
       if (assertionToCheck !== null) {
         throw new Error("Assertion failed: " + assertionToCheck + "is not null");
       } else {
-        console.log("%c Assertion passed!: ",
+        console.log("    %c Assertion passed!: ",
           'background: green; color: #bada55', assertionToCheck, "is null!");
 
       }
@@ -53,7 +53,7 @@
       if (assertionToCheck == null) {
         throw new Error("Assertion failed: " + assertionToCheck + "is null");
       } else {
-        console.log("%c Assertion passed!: ",
+        console.log("    %c Assertion passed!: ",
           'background: green; color: #bada55', assertionToCheck, "is not null!");
       }
     },
@@ -62,7 +62,7 @@
       if (!arrayToCheck.includes(wordToCheck)) {
         throw new Error("Assertion failed: " + arrayToCheck + "does not contain" + wordToCheck);
       } else {
-        console.log("%c Assertion passed!: ",
+        console.log("    %c Assertion passed!: ",
           'background: green; color: #bada55', arrayToCheck, "contains", wordToCheck);
       }
     },
@@ -71,7 +71,7 @@
       if (!arrayToCheck.includes(wordToCheck)) {
         throw new Error("Assertion failed: " + arrayToCheck + "does not contain" + wordToCheck);
       } else {
-        console.log("%c Assertion passed!: ",
+        console.log("    %c Assertion passed!: ",
           'background: green; color: #bada55', arrayToCheck, "contains", wordToCheck);
       }
     },
@@ -80,7 +80,7 @@
       if (!funcToCheck.hasOwnProperty(propToLookFor)) {
         throw new Error("Assertion failed: " + funcToCheck + "does not contain property: " + propToLookFor);
       } else {
-        console.log("%c Assertion passed!: ",
+        console.log("    %c Assertion passed!: ",
           'background: green; color: #bada55', funcToCheck, "contains property called", propToLookFor);
       }
     },
@@ -89,7 +89,7 @@
       if (arrayToCheck.length > 0) {
         throw new Error("Assertion failed: " + arrayToCheck + " is not empty");
       } else {
-        console.log("%c Assertion passed!: ",
+        console.log("    %c Assertion passed!: ",
           'background: green; color: #bada55', arrayToCheck, " is empty");
       }
     },
@@ -98,7 +98,7 @@
       if (!Object.values(objectToCheck).includes(element)) {
         throw new Error("Assertion failed: " + objectToCheck + " doesnt contain " + element);
       } else {
-        console.log("%c Assertion passed!: ",
+        console.log("    %c Assertion passed!: ",
           'background: green; color: #bada55', objectToCheck, " contains ", element);
       }
     },
@@ -107,7 +107,7 @@
       if (!typeof objectToCheck.funcToLookFor === 'function') {
         throw new Error("Assertion failed: " + objectToCheck + " doesnt contain " + funcToLookFor);
       } else {
-        console.log("%c Assertion passed!: ",
+        console.log("    %c Assertion passed!: ",
           'background: green; color: #bada55', objectToCheck, " contains ", funcToLookFor);
       }
     }

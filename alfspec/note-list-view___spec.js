@@ -1,11 +1,11 @@
-describe('>Notelist View', function() {
-  it('>>has a function that references to the instantiated notelist ', function() {
+describe('Notelist View', function() {
+  it('    has a function that references to the instantiated notelist ', function() {
     nlview = new NoteListView()
 
     assert.doesFunctionExist(nlview, this.notelist)
   });
 
-  it('>returns a HTML string representing the notelist', function() {
+  it('    returns a HTML string representing the notelist', function() {
     nlview = new NoteListView(new NoteList());
     nlview.notelist.createNote('hello')
     nlview.notelist.createNote('goodbye')
