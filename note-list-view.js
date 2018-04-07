@@ -17,7 +17,7 @@
   NoteListView.prototype.returnHTML = function() {
     var htmlString = "<ul>" + this.notelist.notes.map(
       note =>
-      `<li><div>${note.text.trunc(20, true)}</div></li>`).join("") + "</ul>"
+      `<a href='#notes/${note._id}'>` + `<li><div>${note.text.trunc(20, true)}</div></li></a>`).join("") + "</ul>"
     return htmlString
   };
 

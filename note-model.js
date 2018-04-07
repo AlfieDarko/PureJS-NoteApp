@@ -1,15 +1,9 @@
 (function(exports) {
-  function Note(text) {
+  function Note(text, id) {
+    if (id === undefined) id = 0
     this.text = text
-    this._uid = (function() {
-      var id = 0;
-      return function() {
-        if (arguments[0] === 0) id = 0;
-        return id++;
-      }
-    })();
 
-    this._id = this._uid()
+    this._id = id
   }
 
   exports.Note = Note
